@@ -41,4 +41,4 @@ def login(request):
 @authentication_classes([SessionAuthentication, TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def test_token(request):
-    return Response("Passed!")
+    return Response("Token Validated!")
